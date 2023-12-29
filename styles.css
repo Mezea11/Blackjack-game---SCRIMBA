@@ -18,6 +18,7 @@ p {
 #message-el {
     font-size: 24px;
     font-style: italic;
+    text-align: center;
 }
 
 .container {
@@ -34,7 +35,29 @@ p {
 }
 
 #start-btn {
+    padding: 0.4rem;
+    width: 10rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: darkgoldenrod;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    margin-top: 1rem;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+#start-btn:hover {
+    transform: scale(1.1);
+}
+
+#new-card-btn {
     padding: 0.5rem;
+    width: 10rem;
+    height: 2.5rem;
     cursor: pointer;
     border: none;
     outline: none;
@@ -42,9 +65,12 @@ p {
     text-align: center;
     transition: all .2s ease-in-out;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     border-radius: 8px;
+    color: white;
+    font-size: 16px;
 }
 
-#start-btn:hover {
+#new-card-btn:hover {
     transform: scale(1.1);
 }
