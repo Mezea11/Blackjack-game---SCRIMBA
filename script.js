@@ -1,4 +1,4 @@
-// 2. Use getRandomCard() to set the values of firstCard and secondCard
+// GLOBAL VARIABLES
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
@@ -10,18 +10,18 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
-// 1. Create a function, getRandomCard(), that always returns the number 5
-
+// GENERATES A RANDOM NUMBER BETWEEN 2 - 11
 function getRandomCard() {
     let randomCard = Math.floor(Math.random() * 11) + 2;
     return randomCard;
 }
 
-
+// TRIGGER FOR GAME LOOP
 function startGame() {
     renderGame()
 }
 
+// GAME LOOP
 function renderGame() {
     cardsEl.textContent = "Cards: "
     for (let i = 0; i < cards.length; i++) {
@@ -41,9 +41,8 @@ function renderGame() {
     messageEl.textContent = message
 }
 
-
+// DRAWS NEW CARD
 function newCard() {
-    // 3. Use the getRandomCard() to set the value of card
     let card = getRandomCard();
     sum += card
     cards.push(card)
