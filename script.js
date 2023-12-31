@@ -13,7 +13,17 @@ let cardsEl = document.getElementById("cards-el")
 // GENERATES A RANDOM NUMBER BETWEEN 2 - 11
 function getRandomCard() {
     let randomCard = Math.floor(Math.random() * 13) + 1;
-    return randomCard;
+
+    /* If statement that uses operators (< and >) to 
+    check if cards are less than or greater than 2 and 10 respectively */
+
+    if (randomCard > 10) {
+        return 10
+    } else if (randomCard < 2) {
+        return 11
+    } else {
+        return randomCard;
+    }
 }
 
 // TRIGGER FOR GAME LOOP
