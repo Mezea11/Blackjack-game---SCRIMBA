@@ -12,7 +12,7 @@ let cardsEl = document.getElementById("cards-el")
 
 // GENERATES A RANDOM NUMBER BETWEEN 2 - 11
 function getRandomCard() {
-    let randomCard = Math.floor(Math.random() * 11) + 2;
+    let randomCard = Math.floor(Math.random() * 13) + 1;
     return randomCard;
 }
 
@@ -49,3 +49,23 @@ function newCard() {
     console.log(cards)
     renderGame()
 }
+
+
+console.log(getRandomCard())
+
+
+
+
+/* FUNCTION CREATED JUST FOR FUN TO CHECK WHAT NUMBERS
+   MY getRandomCard FUNCTION GENERATES :) */
+
+let randomCardArray = []
+
+function checkRandomCard() {
+    for (let i = 0; i < 13; i++) {
+        randomCardArray.push(getRandomCard())
+    }
+    console.log(randomCardArray);
+}
+
+checkRandomCard();
